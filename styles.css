@@ -1,0 +1,130 @@
+
+  html {
+      box-sizing: border-box;
+  }
+  
+  body {
+      background: hsl(0, 0%, 95%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+  }
+
+
+  h1 {
+      font-family: 'Big Shoulders Display', Arial, Helvetica, sans-serif;
+      color:hsl(0, 0%, 95%);
+      font-size: 32px;
+      text-transform: uppercase;
+  }
+
+  p {
+      line-height: 2.0;
+      font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+      color:hsl(0, 0%, 95%);
+      font-size: 15px;
+      font-weight: 300;
+      padding-right: 28px;
+  }
+
+ 
+  /*Card Styling*/
+
+  .vehicle-cards {
+      width: 100%;
+      border-radius:15px;
+      max-width: 970px;
+      display: flex;
+      flex-direction: row;
+      height: 475px;
+      overflow: hidden;
+      border-radius: 10px;
+  }
+
+
+  /*SEDANS*/
+
+  .sedans {
+      background-color: hsl(31, 77%, 52%);
+      padding: 30px 50px 25px 40px;
+  }
+
+  .sedans-button {
+      background-color: hsl(0, 0%, 95%);
+      border: none;
+      color:hsl(31, 77%, 52%);
+      font-family: 'Lexend Deca';
+      margin-top: 40px;
+      padding: 10px 25px;
+      border-radius: 20px;
+  }
+
+  .sedans-button:hover {
+      background-color:hsl(31, 77%, 52%);
+      color:hsl(0, 0%, 95%);
+      border: 2px solid hsl(0, 0%, 95%);
+      cursor: pointer;
+  }
+
+ /*SUVS*/
+
+  .suv {
+    background-color: hsl(184, 100%, 22%);
+    padding: 30px 45px 25px 40px;
+}
+
+.suv-button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    color:hsl(184, 100%, 22%);
+    font-family: 'Lexend Deca';
+    margin-top: 40px;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+.suv-button:hover {
+    background-color:hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+/*LUXURY*/
+
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 30px 45px 25px 40px;
+}
+
+.luxury-button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    color:hsl(179, 100%, 13%);
+    font-family: 'Lexend Deca';
+    margin-top: 40px;
+    padding: 10px 25px;
+    border-radius: 20px;    
+}
+
+.luxury-button:hover {
+    background-color:hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+/*MEDIA QUERIES 375PX AND BELOW MOBILE SETTINGS*/
+
+@media (max-width: 375px) {
+    .vehicle-cards {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 45px 15px;
+    }
+    .luxury{
+        border-radius: 0px 0px 15px 15px;
+    }
+}
